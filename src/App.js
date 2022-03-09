@@ -4,11 +4,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 // let name = "Kshitiz"
 function App() {
@@ -51,7 +51,7 @@ function App() {
         </p>
       </div> */}
       {/* <About/> */}
-      {/* <Router>
+      <Router>
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} aboutText="About"/>
         <Alert alert={alert}/>
         <div className="container my-3">
@@ -64,10 +64,10 @@ function App() {
               </Route>
             </Switch>
           </div>
-     </Router> */}
-      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} aboutText="About"/>
+     </Router>
+      {/* <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} aboutText="About"/>
       <Alert alert={alert}/>
-      <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>
+      <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/> */}
     </>
   );
 }
